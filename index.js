@@ -9,3 +9,6 @@ function print(value) {
 
 print();
 print(Javascript);
+
+
+console.log(true || false && false); // true
