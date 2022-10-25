@@ -35,7 +35,7 @@ if (getSum(1, 5) > 3) {
  
 console.log(sum);
 
-//함수를 만드는 방법 2가지
+//함수를 만드는 방법 2가지//
 
 //1.함수 선언
 function liver() {
