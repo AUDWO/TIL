@@ -1,8 +1,5 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  
-  /* justify-content: space-between; */
-  
+const lo = 80;
+
+function koko(score) {
+  return 
 }
