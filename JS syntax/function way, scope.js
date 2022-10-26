@@ -20,7 +20,7 @@ const example2 = undefined ?? 'love'; // love
 const example3 = 'Codeit' ?? 'JavaScript'; // Codeit
 
 
-//block scope의 예시
+///block scope의 예시
 const sum = 0;
 
 function getSum(x, y) {
