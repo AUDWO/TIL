@@ -53,6 +53,9 @@ const codeit = {
 	['topic' + 'Name']: 'Modern JavaScript',
 	[propertyName]:2017,
 	[getJob()]:'프로그래밍 강사'
+	//[getJob()]는 함수의 return값을 나타낸
 };
-
+//codeit[propertyName]=codeit.birth
+//codeit[getJob()]=codeit.job
 console.log(codeit); //>>>{ topicName:"Moder JavaScript", ~~~}
+
