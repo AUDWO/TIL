@@ -191,3 +191,17 @@ function printFavoritSong(name, music) {
 function printFavoritSong(name, { title, singer }) {
   console.log(`최근 '${name}'님이 즐겨듣는 노래는 '${singer}'의 '${title}'이라는 노래입니다.`);
 }
+//---------------------------------------
+//console.log(question); console.log(exMsg); 어떻게 쓰는지 잘 보기 
+function printQuiz({ question, example }) {
+  try {
+     let exMsg = '';
+  for (let i = 0; i < example.length; i++) {
+    exMsg += `${i + 1}. ${example[i]}  `;
+  }
+     console.log(question);
+     console.log(exMsg);
+  } catch (err) {
+    console.log(err.name);
+  }
+}
