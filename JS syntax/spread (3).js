@@ -1,4 +1,4 @@
-//Spread (배)
+//Spread 배열을 복사하기 쉽다
 const web = ['html', 'css'];
 
 const interact = [...web];
