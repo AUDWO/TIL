@@ -83,3 +83,40 @@ const everyReturn = numbers.every((el,i)=>{
 	console.log('every:',i);
 	return el >5;
 })
+
+
+//reduce 
+//정의식
+
+const numbers = [1,2,3,4];
+//acc:reduce메소드의 그전 return값
+numbers.reduce((acc,e,i,arr)=>{
+	return nextAccValue;
+// initalAccValue:처음 reduce를 선언하면 acc값이 비어있기 때문에 임의로 값을 채움
+//만약 acc를 정의하지 않았다면 numbers의 0번 요소가 acc로 정의되고 el은 1번 요소부터 정의됨
+//한마디로 한개씩 당겨짐
+}, initalAccValue);
+
+
+//sort
+//sort 메소드에 아무런 아규먼트도 전달하지 않을 때는
+//기본적으로 유니코드에 정의된 문자열 순서에 따라 정렬된다.
+const letters = ['D', 'C', 'E', 'B', 'A'];
+
+letters.sort();
+
+console.log(letters);
+
+//=-----------------------------------
+//배열이 숫자일경우 그냥 sort()만 써주면 우리가 원하는 오름차순으로 나타나지 않는다
+//따라서 이럴때는 argument를 정의 해줘야 한다.
+const numbers = [1, 10, 4, 21, 36000];
+
+// 오름차순 정렬
+numbers.sort((a, b) => a - b);
+console.log(numbers); // (5) [1, 4, 10, 21, 36000]
+
+// 내림차순 정렬
+numbers.sort((a, b) => b - a);
+console.log(numbers); // (5) [36000, 21, 10, 4, 1]
+
