@@ -65,7 +65,7 @@ console.log(members.size); // 3
 
 // clear 메소드
 members.clear();
-console.log(members.size); // 0
+console.log(members.size); // 
 
 //Set은 중복되는 값을 허용하지 않는 독특한 특징이 있다
 //최초에 추가된 순서를 유지하면서,
