@@ -1,0 +1,1 @@
+class PremiumUser extends User {}
