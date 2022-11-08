@@ -1,4 +1,6 @@
-//어떤 정보를 교환할 때 사용하기 위해서 만들어진 데이터 포
+//JSON
+//자바스크립트의 Object Literal 문법 및 배열 표현법 등과 
+//일정 부분 호환되는 이 데이터 포맷
 
 ('https://jsonplaceholder.typicode.com/users')
   .then((result)=> response.text())
@@ -102,3 +104,30 @@ fetch('https://learn.codeit.kr/api/members/2',{
   .then((response)=> response.text())
   .then((result)=> {console.log(result); });
 
+//자바스크립트 객체 >>>string타입의 JSON데이터로 변환:직렬화(serialization)
+//바스크립트 실행 환경에서, 객체라면 가지는 프로퍼티들일 뿐 서버에는 전혀 보낼 필요가 없는 것들
+//그리고 특히 이 객체의 메소드 같은 경우 서버에서 이를 인식 가능하도록 보낼 수 있는 방법도 없
+
+
+
+
+
+//JSON데이터 >>> 자바스크립트 객체로 변환:역직렬화(Deserialization)
+
+const jsonString = '{"x":1, "y":2}';
+const obj = JSON.parse(jsonString);
+
+console.log(obj.y);
+
+//text메소드를 사용 했을때
+
+fetch('https://jsonplaceholder.tyicode.com/users')
+  .then((response)=> response.text())
+  .then((result)=> {const users = JSON.parse(result);});
+
+//json메소드를 사용했을때
+//response 객체의 text 메소드 대신 json이라는 메소드를 호출하면
+//리스폰스의 내용이 JSON 데이터에 해당하는 경우, 바로 Deserialization까지 수행해줌
+fetch('https://jsonplaceholder.tyicode.com/users')
+  .then((response)=>response.json())
+  .then((result)=> {const users = result;});
