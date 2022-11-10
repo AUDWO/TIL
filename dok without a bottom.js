@@ -56,3 +56,20 @@ li.classList.add('item', todo.isClear && 'done');
 //한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작한다.
 //가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작한다
 //document(는 DOM 트리의 최상위 객체)만날때까지
+
+//Destructuring
+const team = {
+  liverpool:"1",
+  chelsea:"2",
+  Realmadrid:"3",
+}
+
+//보통 객체의 property에 접근하기 위해서는
+const favoriteteam = team.liverpool;
+//이런 형태로 접근해야 하지만 Destructuring을 사용하면
+
+const {liverpool} = team;
+
+console.log(liverpool);
+console.log(favoriteteam);
+//같은 결과를 얻게 된다
