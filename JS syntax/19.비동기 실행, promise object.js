@@ -45,6 +45,8 @@ console.log('c');
 
 //Promise Chaining:then메소드를 연속적으로 붙이는 것
 //then메소드가 사실 새로운promise객체를 리턴하기 때문에 연속적으로 then메소드를 쓸 수 있다
+//일단 가장먼저 fetch함수에서 promise객체가 return되면 그 promise객체의 메소드 then을 쓸 수 있다.(참)
+
 
 fetch('https:..jsonpalceholder.typicode.com/users')
   .then((response)=> response.text())
