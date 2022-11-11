@@ -17,9 +17,12 @@ fetch('https://learn.codeit.kr/api/interviews/summer')
       // 여기에 코드를 작성하세요.
       return fetch('https://learn.codeit.kr/api/members')
     } else {
+      //error발생
       throw new Error('New members not added');
     }
   })
+   //response.json은 js의 object로 나타내줌
+   //response.text는 string의 JSON데이터를 나타내줌 (그냥 promise객체)
   .then((response) => response.json())
   .then((members) => {
     console.log(`총 직원 수: ${members.length}`);
