@@ -1,7 +1,0 @@
-const ne = () => "dwd"
-
-console.log(ne) 
-// >>> [Function: ne]
-
-console.log(ne())
-//dwdw
