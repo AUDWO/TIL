@@ -31,7 +31,7 @@ async function fetchAndPrint() {
 	const result = await response.text();
 	consolelog(result);
 }
-
+ =
 console.log(1);
 fetchAndPrint();
 console.log(3);
@@ -48,3 +48,4 @@ console.log(6);
 
 /* async 함수 안의 코드가 실행되다가 await을 만나면, 일단 await 뒤의 코드가 실행되고, 코드의 실행 흐름이 async 함수 바깥으로 나가서 나머지 코드를 다 실행합니다. 물론 함수 바깥에 더 이상 실행할 코드가 없을 수도 있습니다. 
 어느 경우든 그 이후로는, await 뒤에 있던 Promise 객체가 fulfilled 상태가 되기를 기다립니다. 그리고 기다리던 Promise 객체가 fulfilled 상태가 되면 await이 Promise 객체의 작업 성공 결과를 리턴하는 겁니다. */
+
