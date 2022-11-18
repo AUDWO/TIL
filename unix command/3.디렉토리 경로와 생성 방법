@@ -1,0 +1,37 @@
+//절대 경로: /home/codeit/Documents/PycharmProjects/django/django_coplate
+
+//상대 경로:현재 자신이 위치해 있는 디렉토리를 기준으로 경로를 나타내는 것
+
+//현재 디렉토리를 .으로 표시
+//만약 현재 codeit파일에 있고 django파일에 접근 하고 싶으면: cd ./Documents/PhycharmProjects/django
+//그렇지만 ./는 생략 가
+
+
+
+//상위 디렉토리를 cd ..으로 표시
+//만약 현재 django디렉토리에 있다면 cd ..은 pyhcharmProjects이고 cd ../..는 Documents이다
+
+//ls옵션
+
+//ls -a:'.'으로 시작하는 숨겨진 파일/디렉토리를 보여준다
+
+//ls-l:파일과 디렉토리에 대한 자세한 정보를 보고 싶을
+
+
+//bin:binary의 약자, 사실 커맨드도 결국 어떤 프로그램이다. 커맨드를 입력하면 커맨드에 해당하는 프로그램이 실행되는 것 그리고 이 프로그램들의 일부가 바로 /bin 디렉토리 안에 존재한다
+
+
+// (1)ls dir1 (2)ls ~/dir1 (3)ls ./dir1 (4)ls /dir1 (사용자가 지금 홈 디렉토리에 위치해 있음)
+// 다른 하나를 찾으시오
+
+//4번은 루트디렉토리 안에 있는 dir1디렉토리를 뜻한다
+
+
+//디렉토리와 파일 만들기:mkdir, touch
+
+//mkdir:디렉토리 만들때 사용하는 command
+// mkdir Jul Aug :이렇게 하면 한번에 여러 디렉토리를 만들 수 있다
+
+//touch: 파일을 만들 때 사용하는 command
+//touch finance.txt performance.txt
+//touch Jul/finances.txt Jul/performance.txt 
