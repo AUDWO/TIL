@@ -1,0 +1,61 @@
+//파일 내용 작성
+
+//GUI환경:Micosoft Word, VS Code, PyCharm, 메모장
+//GUI란? Graphical user interface:정말 좁게 보면 사용자가 편리하게 사할 수 있도록 입출력 등의 기능을 알기 쉬운 아이콘 따위의 그래픽으로 나타낸 
+
+//CLI환경: vim
+
+//아무 아큐먼트 없이 실행하면 새로운 파일을 생성
+//파일 경로를 아규먼트로 주면 그 파일을 수정하는 것
+
+//Vim의 4가지 사용 모드
+
+//1.일반 모드(Normal Mode):커서 이동, 텍스트 붙여넣기, 작업 취소(esc)
+//2.입력 모드(Insert Mode):텍스트 입력(i)
+//3.비주얼 모드(Visual Mode):텍스트 블록 지정, 텍스트 복사 (v,V)
+v:한글자만 복사 할 때
+V:문장을 복사 할 때
+그리고 y키를 누르면 복사가 된다
+d를 누르면 잘라내기
+p는 붙여넣기
+
+그리고 yy,dd를 사용하면 굳이 비쥬얼 모드에 갈 필요가 없다
+
+//4.명령 모드(Command Mode):내용 저장, Vim종료(:)
+
+
+//w를 사용하면 파일을 저장할 수 있다
+//:w hello_word.txt
+
+//:q vim종료
+
+
+//터미널에서 vim 파일 접근하는 방법
+// vim hello_word.txt
+
+//파일을 저장하지 않고 vim을 종료하는 방법
+//:q!
+
+
+
+//cat(concatenate):파일의 내용을 간단하게 보고 싶을 때
+//cat커맨드에 여러 파일을 아규먼트로 줄 수 있다
+//cat bohemian_rhapsody.txt killer_queen.txt
+
+
+//less:파일 내용을 페이지 단위로 나눠서 보여준다(파일 내용물의 길이가 엄청 길 때 사용)
+
+
+//head, tail:파일의 시작 부분이나 끝 부분을 확인할 때 사용한다.
+//-n:파일의 시작,끝 부분을 출력할 줄의 갯수를 정하는 command
+//head -n 5 bohemian_rhapsody.txt:5줄만 나옴
+
+
+
+
+//참고
+//space bar or f :다음 페이지
+//b:이전 페이지
+//G:마지막 페이지
+//g:처음 페이지
+
