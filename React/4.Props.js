@@ -30,6 +30,8 @@ function Dice(props) {
 
 export default Dice;
 
+
+
 function Dice({color, num}) {
 	const scr = DICE_IMAGES[color][num-1];
 	const alt = '${color} ${num}';

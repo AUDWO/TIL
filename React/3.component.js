@@ -6,6 +6,7 @@ console.log(element)
 ReactDOM.render(element, document.getElementById('root'));
 
 //리액트 엘리먼트:console에 JS객체가 출력 되는데 그때 그 객체를 React Element라고 부른다
+//좀더 자세히 정의하자면 JSX 문법으로 작성한 요소는 결과적으로 자바스크립트 객체가 되는데 이 객체를 리액트 엘리먼트라고 한다
 //이때 render안에 리액트 엘리먼트를 아규먼트 값으로 주면 이 객체를 해석해서 HTML로 렌더링한다
 
 
