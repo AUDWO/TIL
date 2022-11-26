@@ -1,0 +1,52 @@
+import rockImg from './assets/rock.svg';
+import scissorImg from './assets/scissor.svg';
+import paperImg from './assets/paper.svg';
+
+
+const IMAGES = {
+	rock:rockImg,
+	scissor:scissorImg,
+	papaer:paperImg,
+};
+
+function HandIcon({value}) {
+	const src = IMAGES[value];
+	return <img src={src} alt={value} />;
+}
+
+
+export default HandIcon;
+
+//-------------------------------------------
+
+import HandIcon from './HandIcon';
+
+function HandButton({value, onClick}) {
+  //handleClick함수를 HandButton안에서 정의하는 이유
+  //value값을 받아와야 하기 때
+  const handleClick = () => onClick(value);
+  return (
+    <button onClick={handleClick}>
+      <HandIcon value = {value} />
+    </button>  
+  );
+}
+
+export default HandButton;
+
+
+
+//------------------------------------------
+
+import HandButton from './HandButton';
+
+function App() {
+	const handleClick2 = (value) => console.log(value);
+	return (
+	  <div>
+	      <HandButton value="rock" onClick={handleClick2} />
+	      <HandButton value="scissor" onClick={handleClick2} />
+	      <HandButton value="paper" onClick={handleClick2} />
+	  </div>
+	)
+}

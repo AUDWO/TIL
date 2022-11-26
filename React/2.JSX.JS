@@ -49,3 +49,25 @@ ReactDOM.render(
   </>,
   document.getElementById('root')
 );
+
+
+import ReactDOM from 'react-dom';
+
+const product = 'Macbook';
+const model = 'Air';
+const item = product + model;
+
+function handleClick() {
+  alert('곧 도착합니다');
+}
+
+
+ReactDOM.render(
+  <>
+    <h1>나만의 {item} 주문하기</h1>
+    <img src= {imageUrl} alt="제품 사진" />
+    //리액트에서는 JSX문법을 활용하기 때문에 ㅏㅡ이벤트 등록을 할 때 addeventlistener보다 속성을 추가한다
+    <button onClick={handleClick}>확인</button>
+  </>,
+  document.getElementById('root')
+);
